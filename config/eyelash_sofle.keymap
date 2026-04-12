@@ -76,6 +76,7 @@
 
     keymap {
         compatible = "zmk,keymap";
+        conditional-layers = <&conditional_layers>;
 
         layer0 {
             bindings = <
