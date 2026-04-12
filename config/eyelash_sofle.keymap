@@ -69,8 +69,8 @@
     conditional_layers: conditional_layers {
         compatible = "zmk,conditional-layers";
         adjust_layer {
-            if-layers = <1 3>;
-            then-layer = <2>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -84,7 +84,7 @@
 &kp TAB   &kp SQT   &kp COMMA &kp DOT  &kp P     &kp Y                  &trans     &kp F    &kp G     &kp C     &kp R    &kp L    &kp FSLH
 &kp ESC   &kp A     &kp O     &kp E    &kp U     &kp I                  &kp C_PREV &kp D    &kp H     &kp T     &kp N    &kp S    &kp MINUS
 &kp LSHFT &kp SEMI  &kp Q     &kp J    &kp K     &kp X                  &kp C_NEXT &kp B    &kp M     &kp W     &kp V    &kp Z    &kp RSHFT
-&trans    &kp LCTRL &kp LGUI  &kp LALT &kp LCTRL &kp SPACE              &kp C_PP   &kp RET  &mo 3     &kp RGUI  &kp RALT &mo 1
+&trans    &kp LCTRL &kp LGUI  &kp LALT &kp LCTRL &kp SPACE              &kp C_PP   &kp RET  &mo 2     &kp RGUI  &kp RALT &mo 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -106,11 +106,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&trans  &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &trans  &kp F6    &kp F7   &kp F8    &kp F9    &kp F10   &kp F11
+&trans  &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT                 &trans  &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp F12
+&trans  &trans    &kp LBRC  &kp LBKT    &kp LPAR  &kp EQUAL                 &trans  &kp PLUS  &kp RPAR &kp RBKT  &kp RBRC  &kp PIPE  &kp UNDER
+&trans  &kp COLON &kp QMARK &kp DQT     &kp LT    &kp UNDER                 &trans  &kp MINUS &kp GT   &kp BSLH  &trans    &trans    &trans
+&trans  &trans    &trans    &trans      &trans    &trans                    &trans  &trans    &trans   &trans    &trans    &trans
             >;
 
             display-name = "layer2";
@@ -119,11 +119,11 @@
 
         layer_3 {
             bindings = <
-&trans  &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &trans  &kp F6    &kp F7   &kp F8    &kp F9    &kp F10   &kp F11
-&trans  &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT                 &trans  &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp F12
-&trans  &trans    &kp LBRC  &kp LBKT    &kp LPAR  &kp EQUAL                 &trans  &kp PLUS  &kp RPAR &kp RBKT  &kp RBRC  &kp PIPE  &kp UNDER
-&trans  &kp COLON &kp QMARK &kp DQT     &kp LT    &kp UNDER                 &trans  &kp MINUS &kp GT   &kp BSLH  &trans    &trans    &trans
-&trans  &trans    &trans    &trans      &trans    &trans                    &trans  &trans    &trans   &trans    &trans    &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
 
 
