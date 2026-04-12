@@ -66,7 +66,7 @@
         };
     };
 
-    conditional_layers {
+    conditional_layers: conditional_layers {
         compatible = "zmk,conditional-layers";
         adjust_layer {
             if-layers = <1 3>;
