@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  LAYER0:
+  Base:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -54,18 +54,18 @@ layers:
   - Z
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - layer1
+  - Nav
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - $$mdi:play-pause$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - layer2
+  - Symbol
   - RGUI
   - $$mdi:apple-keyboard-option$$
-  - layer1
-  layer1:
+  - Nav
+  Nav:
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  layer2:
+  Symbol:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer3:
+  BT:
   - '~'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}

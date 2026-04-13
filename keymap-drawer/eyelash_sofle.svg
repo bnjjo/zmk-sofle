@@ -292,8 +292,8 @@ rect.held, rect.combo.held {
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-LAYER0">
-<text x="0" y="28" class="label" id="LAYER0">LAYER0:</text>
+<g transform="translate(40, 0)" class="layer-Base">
+<text x="0" y="28" class="label" id="Base">Base:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -580,8 +580,8 @@ rect.held, rect.combo.held {
 <g transform="translate(140, 259)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#layer1">
-<text x="0" y="-4" class="key tap layer-activator">layer1</text>
+<a href="#Nav">
+<text x="0" y="-4" class="key tap layer-activator">Nav</text>
 </a></g>
 <g transform="translate(196, 252)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -616,8 +616,8 @@ rect.held, rect.combo.held {
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#layer2">
-<text x="0" y="-4" class="key tap layer-activator">layer2</text>
+<a href="#Symbol">
+<text x="0" y="-4" class="key tap layer-activator">Symbol</text>
 </a></g>
 <g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -632,8 +632,8 @@ rect.held, rect.combo.held {
 <g transform="translate(784, 259)" class="key keypos-63">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#layer1">
-<text x="0" y="-4" class="key tap layer-activator">layer1</text>
+<a href="#Nav">
+<text x="0" y="-4" class="key tap layer-activator">Nav</text>
 </a></g>
 <g class="combo combopos-0">
 <path d="M103,161 l-13,45" class="combo"/>
@@ -642,8 +642,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 388)" class="layer-layer1">
-<text x="0" y="28" class="label" id="layer1">layer1:</text>
+<g transform="translate(40, 388)" class="layer-Nav">
+<text x="0" y="28" class="label" id="Nav">Nav:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1002,8 +1002,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 776)" class="layer-layer2">
-<text x="0" y="28" class="label" id="layer2">layer2:</text>
+<g transform="translate(40, 776)" class="layer-Symbol">
+<text x="0" y="28" class="label" id="Symbol">Symbol:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1336,8 +1336,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1165)" class="layer-layer3">
-<text x="0" y="28" class="label" id="layer3">layer3:</text>
+<g transform="translate(40, 1165)" class="layer-BT">
+<text x="0" y="28" class="label" id="BT">BT:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
