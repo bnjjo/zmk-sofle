@@ -91,7 +91,7 @@ layers:
   - I
   - O
   - P
-  - {t: /, s: '?'}
+  - {t: '[', s: '{'}
   - $$mdi:keyboard-esc$$
   - A
   - S
