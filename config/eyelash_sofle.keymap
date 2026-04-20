@@ -74,7 +74,7 @@
         bt1_qwerty: bt1_qwerty {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&to 4>;
+            bindings = <&bt BT_SEL 1>, <&to 1>;
             label = "BT1_QWERTY";
         };
     };
@@ -82,8 +82,8 @@
     conditional_layers: conditional_layers {
         compatible = "zmk,conditional-layers";
         adjust_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 
@@ -97,7 +97,7 @@
 &kp TAB   &kp SQT   &kp COMMA &kp DOT  &kp P     &kp Y                  &trans     &kp F    &kp G     &kp C     &kp R    &kp L    &kp FSLH
 &kp ESC   &kp A     &kp O     &kp E    &kp U     &kp I                  &kp C_PREV &kp D    &kp H     &kp T     &kp N    &kp S    &kp MINUS
 &kp LSHFT &kp SEMI  &kp Q     &kp J    &kp K     &kp X                  &kp C_NEXT &kp B    &kp M     &kp W     &kp V    &kp Z    &kp RSHFT
-&trans    &mo 1 &kp LGUI  &kp LALT &kp LCTRL &kp SPACE                  &kp C_PP   &kp RET  &mo 2     &kp RGUI  &kp RALT &mo 1
+&trans    &mo 2 &kp LGUI  &kp LALT &kp LCTRL &kp SPACE                  &kp C_PP   &kp RET  &mo 3     &kp RGUI  &kp RALT &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -105,6 +105,19 @@
         };
 
         layer_1 {
+            bindings = <
+&kp GRAVE &kp N1    &kp N2    &kp N3   &kp N4    &kp N5                 &trans     &kp N6   &kp N7    &kp N8    &kp N9   &kp N0   &kp BSPC
+&kp TAB   &kp Q     &kp W     &kp E    &kp R     &kp T                  &trans     &kp Y    &kp U     &kp I     &kp O    &kp P    &kp FSLH
+&kp ESC   &kp A     &kp S     &kp D    &kp F     &kp G                  &kp C_PREV &kp H    &kp J     &kp K     &kp L    &kp SEMI &kp SQT
+&kp LSHFT &kp Z     &kp X     &kp C    &kp V     &kp B                  &kp C_NEXT &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+&trans    &mo 2     &kp LGUI  &kp LALT &kp LCTRL &kp SPACE              &kp C_PP   &kp RET  &mo 3     &kp RGUI  &kp RALT &mo 2
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            display-name = "QWERTY";
+        };
+
+        layer_2 {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
@@ -117,7 +130,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_2 {
+        layer_3 {
             bindings = <
 &trans  &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &trans  &kp F6    &kp F7   &kp F8    &kp F9    &kp F10   &kp F11
 &trans  &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT                 &trans  &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp F12
@@ -130,7 +143,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        layer_4 {
             bindings = <
 &kp TILDE  &bt0_dvorak   &bt1_qwerty     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
@@ -141,19 +154,6 @@
 
             display-name = "BT";
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer_4 {
-            bindings = <
-&kp GRAVE &kp N1    &kp N2    &kp N3   &kp N4    &kp N5                 &trans     &kp N6   &kp N7    &kp N8    &kp N9   &kp N0   &kp BSPC
-&kp TAB   &kp Q     &kp W     &kp E    &kp R     &kp T                  &trans     &kp Y    &kp U     &kp I     &kp O    &kp P    &kp BSLH
-&kp ESC   &kp A     &kp S     &kp D    &kp F     &kp G                  &kp C_PREV &kp H    &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&kp LSHFT &kp Z     &kp X     &kp C    &kp V     &kp B                  &kp C_NEXT &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-&trans    &mo 1     &kp LGUI  &kp LALT &kp LCTRL &kp SPACE              &kp C_PP   &kp RET  &mo 2     &kp RGUI  &kp RALT &mo 1
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "QWERTY";
         };
     };
 };
