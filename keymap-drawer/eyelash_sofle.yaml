@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Dvorak:
-  - {t: '`', s: '~'}
+  - {t: '`', h: '$$mdi:apple-keyboard-caps$$', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -66,7 +66,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - Nav
   QWERTY:
-  - {t: '`', s: '~'}
+  - {t: '`', h: '$$mdi:apple-keyboard-caps$$', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -224,27 +224,27 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '{'
-  - {t: '[', s: '{'}
-  - (
-  - {t: '=', s: +}
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))
+  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS))))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))
   - {t: '$$mdi:transfer$$', type: trans}
-  - +
-  - )
-  - {t: ']', s: '}'}
-  - '}'
-  - '|'
-  - _
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))))
+  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS)))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS))))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE)))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))))
   - {t: '$$mdi:transfer$$', type: trans}
-  - ':'
-  - '?'
-  - '"'
-  - <
-  - _
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Z)))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Q))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD W))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))))
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', s: _}
-  - '>'
-  - {t: \, s: '|'}
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD E))))
+  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE)))
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
